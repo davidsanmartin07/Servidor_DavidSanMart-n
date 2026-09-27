@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 40px 16px;
+    background: #eef2f7;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #1f2937;
+}
+
+/* El propio <form> hace de tarjeta */
+form {
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Los <br><br> del HTML sobran: el espaciado lo da el CSS */
+form br {
+    display: none;
+}
+
+label {
+    display: block;
+    margin: 16px 0 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+label:first-child {
+    margin-top: 0;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: #ffffff;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 24px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #1d4ed8;
+}
+/* --- Botón "Listar" (formulario aparte, más discreto) --- */
+.form-listar {
+    max-width: 440px;
+    margin: 16px auto 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.form-listar input[type="submit"] {
+    background: #475569;
+    margin-top: 0;
+}
+
+.form-listar input[type="submit"]:hover {
+    background: #334155;
+}
+
+/* --- Tabla del listado de alumnado (en formulario.php) --- */
+h2 {
+    max-width: 760px;
+    margin: 0 auto 16px;
+}
+
+.tabla-alumnado {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto 16px;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.tabla-alumnado th,
+.tabla-alumnado td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tabla-alumnado th {
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.tabla-alumnado tr:last-child td {
+    border-bottom: none;
+}
+
+.volver {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.volver a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.volver a:hover {
+    text-decoration: underline;
+}
